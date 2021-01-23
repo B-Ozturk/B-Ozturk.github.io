@@ -18,3 +18,7 @@ table, th, td{
     font-family: 'Times New Roman', serif;
     color: white;
 }
+
+.caption{
+    background-color: #aeb4b6;
+}
