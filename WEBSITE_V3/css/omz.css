@@ -20,3 +20,27 @@ body
 p{
     color: #ffff;
 }
+
+hr { 
+    border: none; 
+    background: #66CCFF; 
+    margin-top: 50px;
+    margin-bottom: 50px; 
+} 
+
+.kopie a{
+    color: #66CCFF;
+}
+.kopie{
+    color: #66CCFF;
+    text-align: center;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }

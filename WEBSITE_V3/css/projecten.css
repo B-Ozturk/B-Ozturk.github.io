@@ -22,3 +22,23 @@ table, th, td{
 .caption{
     background-color: #aeb4b6;
 }
+
+.kopie a{
+    color: #66CCFF;
+}
+.kopie{
+    color: #66CCFF;
+    text-align: center;
+}
+
+hr { 
+    border: none; 
+    background: #66CCFF; 
+    margin-top: 50px;
+    margin-bottom: 50px; 
+} 
+
+.kaart{
+    background-color: #aeb4b6;
+}
+

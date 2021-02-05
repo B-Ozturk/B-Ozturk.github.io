@@ -10,3 +10,29 @@ body
     background-size: cover;
     background-position-y: center;
 }
+
+hr { 
+    border: none; 
+    background: #66CCFF; 
+    margin-top: 50px;
+    margin-bottom: 50px; 
+} 
+
+table, th, td{
+    border: 3px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    font-family: 'Times New Roman', serif;
+    color: white;
+}
+
+.kopie a{
+    color: #66CCFF;
+}
+.kopie{
+    color: #66CCFF;
+    text-align: center;
+}
+
+.kaart{
+    background-color: #aeb4b6;
+}

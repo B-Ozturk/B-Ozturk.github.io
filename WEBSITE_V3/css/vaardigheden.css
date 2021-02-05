@@ -35,3 +35,17 @@ table, th, td{
     color:#8c00ff;
 }
 
+hr { 
+    border: none; 
+    background: #66CCFF; 
+    margin-top: 50px;
+    margin-bottom: 50px; 
+} 
+
+.kopie a{
+    color: #66CCFF;
+}
+.kopie{
+    color: #66CCFF;
+    text-align: center;
+}
