@@ -1,0 +1,51 @@
+body
+{
+	background-color: #37474F #2e4053;
+	font-family: 'Times New Roman', serif;
+}
+
+.jumbotron{
+    margin-top: 20px;
+    background-image: url("../foto/togg.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
+
+table, th, td{
+    border: 3px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    font-weight: bold;
+    font-family: 'Times New Roman', serif;
+    color: white;
+}
+
+.sterk{
+    color:#09ff00;
+}
+
+.msterk{
+    color:#ff5e00;
+}
+
+.vaardigheden{
+    color:#00c3ff;
+}
+
+.mkennis{
+    color:#8c00ff;
+}
+
+hr { 
+    border: none; 
+    background: #66CCFF; 
+    margin-top: 50px;
+    margin-bottom: 50px; 
+} 
+
+.kopie a{
+    color: #66CCFF;
+}
+.kopie{
+    color: #66CCFF;
+    text-align: center;
+}
