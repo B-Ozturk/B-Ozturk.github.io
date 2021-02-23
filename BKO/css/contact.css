@@ -4,11 +4,19 @@ body
 	font-family: 'Times New Roman', serif;
 }
 
+.navbar{
+	background-color: #090b0f;
+}
+
 .jumbotron{
-    margin-top: 20px;
-    background-image: url("../foto/togg.jpg");
+    background-image: url("../foto/polestar2.webp");
     background-size: cover;
     background-position-y: center;
+}
+
+.lichaam{
+	background-color: #0F2027;
+	font-family: 'Times New Roman', serif;
 }
 
 hr { 
