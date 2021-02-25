@@ -35,10 +35,6 @@ body{
 	margin-left: 50px;
 }
 
-.beschrijving{
-	position:relative;left:120px;top:0px;
-}
-
 .container{
 	background-color:  #44464a;
 	width: 700px;
@@ -130,14 +126,6 @@ li.timeline-item::before {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-
-/*
-*
-* ==========================================
-* FOR DEMO PURPOSES
-* ==========================================
-*
-*/
 body {
     background: #37474f;
     background: -webkit-linear-gradient(to right, #37474f, #37474f);
