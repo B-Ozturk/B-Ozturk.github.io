@@ -1,11 +1,25 @@
-body
-{
-	background-color: #37474F #2e4053;
-	font-family: 'Times New Roman', serif;
+/*alle classes/ID's met LM achter is de light mode versie*/
+.nav-link:hover{
+    color: red;
 }
 
+.nav{
+	margin-top: 50px;
+}
 .navbar{
 	background-color: #090b0f;
+}
+.navLM{
+    background-color: #ffffff;
+}
+.subpagina{
+    color: #ffffff;
+}
+.subpaginaLM{
+    color: #000000;
+}
+.navbar-toggler-icon{
+    color: crimson;
 }
 
 .jumbotron{
@@ -13,10 +27,23 @@ body
     background-size: cover;
     background-position-y: center;
 }
+.jumbotronLM{
+    background-image: url("../foto/polestar_wit.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
 
+body
+{
+	background-color: #37474F #2e4053;
+	font-family: 'Times New Roman', serif;
+}
 .lichaam{
 	background-color: #0F2027;
 	font-family: 'Times New Roman', serif;
+}
+.lichaamLM{
+    background-color: #e2e2e2;
 }
 
 table, th, td{

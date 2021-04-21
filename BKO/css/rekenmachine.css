@@ -1,0 +1,135 @@
+/*alle classes/ID's met LM achter is de light mode versie*/
+.nav-link:hover{
+    color: red;
+}
+
+.nav{
+	margin-top: 50px;
+}
+.navbar{
+	background-color: #090b0f;
+}
+.navLM{
+    background-color: #ffffff;
+}
+.subpagina{
+    color: #ffffff;
+}
+.subpaginaLM{
+    color: #000000;
+}
+.navbar-toggler-icon{
+    color: crimson;
+}
+
+.jumbotron{
+    background-image: url("../foto/polestar2.webp");
+    background-size: cover;
+    background-position-y: center;
+}
+.jumbotronLM{
+    background-image: url("../foto/polestar_wit.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
+
+body
+{
+	background-color: #37474F #2e4053;
+	font-family: 'Times New Roman', serif;
+}
+.lichaam{
+	background-color: #0F2027;
+	font-family: 'Times New Roman', serif;
+}
+.lichaamLM{
+    background-color: #e2e2e2;
+}
+
+hr { 
+    border: none; 
+    background: #66CCFF; 
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+
+.kopie a{
+    color: #66CCFF;
+}
+.kopie{
+    color: #66CCFF;
+    text-align: center;
+}
+
+/*CSS van de rekenmachine*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-weight: normal;
+  }
+  
+  .calculator-grid {
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  }
+  
+  .calculator-grid > button {
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #9fa3a5;
+    outline: none;
+    background-color: rgba(207, 207, 207, 0.75);
+  }
+  
+  .calculator-grid > button:hover {
+    background-color: red;
+  }
+  
+  .calculator-grid > .operator{
+    border: 1px solid #ff9600;
+    background-color: #ff9600;
+  }
+  
+  .span-two {
+    grid-column: span 2;
+  }
+  
+  .output {
+    border-radius: 50px;
+    grid-column: 1 / -1;
+    background-color: rgba(85, 85, 85, 0.75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  .outputLM{
+    border-radius: 50px;
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .output .previous-operand {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+  }
