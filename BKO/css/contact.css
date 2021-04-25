@@ -17,6 +17,12 @@
 }
 .subpaginaLM{
     color: #000000;
+<<<<<<< HEAD
+=======
+}
+.navbar-toggler-icon{
+    color: crimson;
+>>>>>>> 01d8e7ebac1f25a720e9937d041e68d9c319f354
 }
 
 .jumbotron{
@@ -31,11 +37,20 @@
     background-position: center;
     height: 488px;
 }
+.jumbotronLM{
+    background-image: url("../foto/polestar_wit.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
 
 body
 {
 	background-color: #37474F #2e4053;
+<<<<<<< HEAD
 	font-family: sans-serif;
+=======
+	font-family: 'Times New Roman', serif;
+>>>>>>> 01d8e7ebac1f25a720e9937d041e68d9c319f354
 }
 .lichaam{
 	background-color: #0F2027;
@@ -44,6 +59,9 @@ body
 .lichaamLM{
     background-color: #e2e2e2;
     font-family: sans-serif;
+}
+.lichaamLM{
+    background-color: #e2e2e2;
 }
 
 hr { 
