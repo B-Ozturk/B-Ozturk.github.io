@@ -21,19 +21,9 @@ p{
 }
 .subpagina{
     color: #ffffff;
-<<<<<<< HEAD
 }
 .subpaginaLM{
     color: #000000;
-=======
-}
-.subpaginaLM{
-    color: #000000;
-}
-.navbar-toggler-icon{
-    color: rgb(0, 174, 255);
-    background-color: blueviolet;
->>>>>>> 01d8e7ebac1f25a720e9937d041e68d9c319f354
 }
 
 .jumbotron{
@@ -48,11 +38,6 @@ p{
     background-position: center;
     height: 488px;
 }
-.jumbotronLM{
-    background-image: url("../foto/polestar_wit.jpg");
-    background-size: cover;
-    background-position-y: center;
-}
 
 body{
 	background-color: #37474F;
@@ -66,9 +51,6 @@ body{
 .lichaamLM{
     background-color: #e2e2e2;
     font-family: sans-serif;
-}
-.lichaamLM{
-    background-color: #e2e2e2;
 }
 
 .titel{
@@ -86,15 +68,12 @@ body{
     color: #000000;
 }
 
-<<<<<<< HEAD
 #demo{
     color: red;
     text-align: center;
     font-size: large;
     margin-top: 0px;
 }
-=======
->>>>>>> 01d8e7ebac1f25a720e9937d041e68d9c319f354
 
 .kontainer{
 	background-color:  #44464a;
