@@ -69,7 +69,6 @@ setInterval(function(){
 
 }, 1000);
 
-<<<<<<< HEAD
 function showTime(){
     const date = new Date();
     let h = date.getHours(); // 0 - 23
@@ -99,32 +98,3 @@ function showTime(){
 }
 
 showTime();
-=======
-// Set the date we're counting down to
-const countDownDate = new Date("May 31, 2021 00:00:00").getTime();
-
-let Timer = setInterval(function() {
-
-  // Data van vandaag
-  const nu = new Date().getTime();
-    
-  // Berekent het verschil tussen nu en countDownDate
-  let verschil = countDownDate - nu;
-    
-  // Berekening van de resterende tijd
-  const dagen = Math.floor(verschil / (1000 * 60 * 60 * 24));
-  const uren = Math.floor((verschil % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minuten = Math.floor((verschil % (1000 * 60 * 60)) / (1000 * 60));
-  const seconden = Math.floor((verschil % (1000 * 60)) / 1000);
-    
-  // De output => id="demo"
-  document.getElementById("demo").innerHTML ="Next update in " + dagen + "d " + uren + "h "
-  + minuten + "m " + seconden + "s ";
-    
-  // Als de timer op nul staat dan voert het dit uit
-  if (verschil < 0) {
-    clearInterval(Timer);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
->>>>>>> 153b00fb7e415eaea4e0740155ddb8f898d8a6ae
