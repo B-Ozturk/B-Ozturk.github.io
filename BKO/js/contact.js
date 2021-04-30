@@ -10,12 +10,6 @@ const changeHandler = function(){
     const polestar = document.querySelector(".jumbotron");
     polestar.classList.toggle("jumbotronLM");
 
-    const dropdown = document.querySelector(".navbar-dark");
-    dropdown.classList.toggle("navbar-light");
-
-    const dropdown2 = document.querySelector(".navbar-toggler-icon");
-    dropdown2.classList.toggle("navbar-light");
-
     let subpagina, a;
     subpagina = document.querySelectorAll(".subpagina");
     for (a = 0; a < subpagina.length; a++) {
@@ -52,13 +46,3 @@ setInterval(function(){
     else if(lightModeOn === true){
     }
 }, 1000);
-
-//Website visitor counter
-function counter_fn() {
-    let counter = document.getElementById("cntr");
-    let count = 0;
-    count = parseInt(counter.innerHTML);
-    count = count + 1;
-    counter.innerHTML = count;
-}
-window.onload = counter_fn;
