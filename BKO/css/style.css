@@ -21,10 +21,17 @@ p{
 }
 .subpagina{
     color: #ffffff;
+<<<<<<< HEAD
 }
 .subpaginaLM{
     color: #000000;
 }
+=======
+}
+.subpaginaLM{
+    color: #000000;
+}
+>>>>>>> 153b00fb7e415eaea4e0740155ddb8f898d8a6ae
 
 .jumbotron{
     background-image: url("../foto/Polestar2.1.jpg");
@@ -68,7 +75,18 @@ body{
 .introLM{
     color: #000000;
 }
+.introLM{
+    color: #000000;
+}
 
+#demo{
+    color: red;
+    text-align: center;
+    font-size: large;
+    margin-top: 0px;
+}
+
+<<<<<<< HEAD
 .clock {
     position: absolute;
     top: 50%;
@@ -81,6 +99,8 @@ body{
     margin-top: 45px;
 }
 
+=======
+>>>>>>> 153b00fb7e415eaea4e0740155ddb8f898d8a6ae
 .kontainer{
 	background-color:  #44464a;
 	width: 700px;
