@@ -63,22 +63,9 @@ body{
 	margin-bottom: 50px;
 	margin-right: 50px;
 	margin-left: 50px;
-    padding-bottom: 45px;
 }
 .introLM{
     color: #000000;
-}
-
-.clock {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    color: red;
-    font-size: 60px;
-    font-family: 'Courier New', monospace;
-    letter-spacing: 7px;
-    margin-top: 45px;
 }
 
 .kontainer{
@@ -93,7 +80,6 @@ body{
     background-color: #ffffff;
     color: #000000;
 }
-
 
 a{
 	text-decoration: none;

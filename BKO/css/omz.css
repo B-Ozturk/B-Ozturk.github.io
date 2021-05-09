@@ -1,18 +1,10 @@
 /*alle classes/ID's met LM achter is de light mode versie*/
 .nav-link:hover{
     color: red;
-<<<<<<< HEAD
 }
 .nav{
 	margin-top: 50px;
 }
-=======
-}
-
-.nav{
-	margin-top: 50px;
-}
->>>>>>> 153b00fb7e415eaea4e0740155ddb8f898d8a6ae
 .navbar{
 	background-color: #2e323a;
 }
