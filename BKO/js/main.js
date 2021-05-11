@@ -1,4 +1,4 @@
-alert("Als je op de foto's bij de tijdlijn klikt dan kan je naar die versie gaan.Dit werkt geldt niet voor Versie 3\nIk heb niets verbeterd aan de oude versies zodat je kan zien hoe het er toen uit zag.Geniet van de evolutie van mijn website.\n\nBKO - Berke Kaan Öztürk");
+alert("Als je op de foto's bij de tijdlijn klikt dan kan je naar die versie gaan.Dit werkt geldt niet voor Versie 3\nIk heb niets verbeterd aan de oude versies zodat je kan zien hoe het er toen uit zag. Geniet van de evolutie van mijn website.\n\nBKO - Berke Kaan Öztürk");
 
 const button = document.querySelector(".lichaam");
 let lightModeOn = false;/*Darkmode*/
