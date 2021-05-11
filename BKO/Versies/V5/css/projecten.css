@@ -1,0 +1,51 @@
+body
+{
+	background-color: #37474F #2e4053;
+	font-family: 'Times New Roman', serif;
+}
+
+.navbar{
+	background-color: #090b0f;
+}
+
+.jumbotron{
+    background-image: url("../foto/polestar2.webp");
+    background-size: cover;
+    background-position-y: center;
+}
+
+.lichaam{
+	background-color: #0F2027;
+	font-family: 'Times New Roman', serif;
+}
+
+table, th, td{
+    border: 3px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    font-weight: bold;
+    font-family: 'Times New Roman', serif;
+    color: white;
+}
+
+.caption{
+    background-color: #aeb4b6;
+}
+
+.kopie a{
+    color: #66CCFF;
+}
+.kopie{
+    color: #66CCFF;
+    text-align: center;
+}
+
+hr { 
+    border: none; 
+    background: #66CCFF; 
+    margin-top: 50px;
+    margin-bottom: 50px; 
+} 
+
+.kaart{
+    background-color: #aeb4b6;
+}

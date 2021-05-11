@@ -1,0 +1,17 @@
+#efoto
+{
+  display: flex;
+  justify-content: flex-start;
+}
+
+#tfoto
+{
+	display: flex;
+  justify-content: center;
+}
+
+#dfoto
+{
+	display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,138 @@
+h2{
+	color: snow;
+}
+p{
+	color: snow;
+}
+.navbar{
+	background-color: #090b0f;
+}
+.jumbotron{
+    background-image: url("../foto/polestar2.webp");
+    background-size: cover;
+    background-position-y: center;
+}
+
+body{
+	background-color: #37474F;
+	font-family: 'Times New Roman', serif; 	  
+}
+
+.lichaam{
+	background-color: #0F2027;
+	font-family: 'Times New Roman', serif;
+}
+
+.titel{
+	text-align: center;
+	color: #919191;
+}
+
+.intro{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+.kontainer{
+	background-color:  #44464a;
+	width: 700px;
+	margin-top: -30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+.nav{
+	margin-top: 50px;
+}
+
+a
+{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+h1
+{
+	margin: 0;
+}
+
+h2{
+	text-align: center;
+}
+
+.kopie{
+	clear: both;
+	padding: 10px;
+	background-color: #44464a;
+	color: #66CCFF;
+	text-align: center;
+	margin-left:  -15px;
+	margin-right: -15px;
+}
+
+.kopie a{
+	color: #66CCFF;
+}
+
+
+/* Timeline holder */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+ /* Timeline vertical line */
+ul.timeline:before {
+    content: ' ';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
+}
+
+li.timeline-item {
+    margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid #343a40;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+    content: ' ';
+    background: rgb(129, 129, 129);
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid rgb(196, 196, 196);
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background: #37474f;
+    background: -webkit-linear-gradient(to right, #37474f, #37474f);
+    background: linear-gradient(to 37474f, #37474f, #37474f);
+    min-height: 100vh;
+}
+
+.text-gray {
+    color: rgb(0, 0, 0);
+}
