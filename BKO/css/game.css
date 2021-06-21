@@ -51,6 +51,20 @@ p{
     color: #000000;
 }
 
+.text{
+  color: #ffffff;
+}
+.textLM{
+  color: #000000;
+}
+
+.tekst{
+  color: #ffffff;
+}
+.tekstLM{
+  color: #000000;
+}
+
 hr { 
     border: none; 
     background: #66CCFF; 
@@ -64,6 +78,127 @@ hr {
 .kopie{
     color: #66CCFF;
     text-align: center;
+}
+
+/* Scoreboard */
+.centeredParagraph {
+  text-align: center;
+}
+
+.column {
+float: left;
+}
+
+.add-players {
+margin-left: 20px;
+}
+
+.add-players {
+width: 33.33%;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.game-container {
+margin-left: 495px;
+width: 1000px;
+}
+
+.player-info-container {
+height: 180px;
+width: 300px;
+}
+
+.top-button-container {
+float: right;
+}
+
+.page-title {
+text-align: center;
+vertical-align: middle;
+width: 1000px;
+}
+
+.title-text {
+font-weight: bold;
+text-align: center;
+vertical-align: middle;
+width: 1000px;
+}
+
+.input-field {
+font-size:22px;
+margin-top: 10px;
+background-color: #2b5b74;
+border:0px solid #ffffff;
+border-radius: 4px;
+color: #ffffff;
+}
+
+.button {
+margin:20px;
+}
+
+.add-points-button {
+font-size:30px;
+background-color:#6f7274;
+border:6px solid #66CCFF;
+color: #66CCFF;
+border-radius: 20px;
+}
+
+.add-points-button:active {
+position:relative;
+top:1px;
+}
+
+.add-player-button {
+background-color:#66CCFF;
+border-radius:15px;
+border:2px solid #ffffff;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial;
+font-size:18px;
+padding:12px 16px;
+text-decoration:none;
+text-shadow:0px 1px 0px #ffffff;
+border: none;
+outline:none; 
+width: 200px;
+margin-left: 10px;
+}
+
+.add-player-button:active {
+position:relative;
+top:1px;
+}
+
+.reset-game-button {
+background-color:#ff0000;
+border-radius:15px;
+border:2px solid #ffffff;
+display:inline-block;
+cursor:pointer;
+color:#ffffff ;
+font-family:Arial;
+font-size:18px;
+padding:12px 16px;
+text-decoration:none;
+text-shadow:0px 1px 0px #ffffff;
+border: none;
+outline:none; 
+width: 200px;
+}
+
+.reset-game-button:active {
+position:relative;
+top:1px;
 }
 
 /*CSS van TicTacToe*/
@@ -81,6 +216,7 @@ hr {
   }
   
   .board {
+    padding-top: 130px;
     width: 100vw;
     height: 100vh;
     display: grid;

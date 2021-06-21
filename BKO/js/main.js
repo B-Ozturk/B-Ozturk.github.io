@@ -67,3 +67,7 @@ setInterval(function(){
     }
 
 }, 1000);
+
+// Eventlistener voor themeswitcher button
+const knopje = document.querySelector(".knopje")
+knopje.addEventListener("click", changeHandler);

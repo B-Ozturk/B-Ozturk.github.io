@@ -1,6 +1,8 @@
+import Player from "./Player.js";
+
 const button = document.querySelector(".lichaam");
 let lightModeOn = false;
-//lightmode
+// Lightmode
 const changeHandler = function(){
     lightModeOn = true;
     const polestar = document.querySelector(".jumbotron");
@@ -18,6 +20,12 @@ const changeHandler = function(){
     const body = document.querySelector(".lichaam");
     body.classList.toggle("lichaamLM");
 
+    let tekst, b;
+    tekst = document.querySelectorAll(".tekst");
+    for (b = 0; b < tekst.length; b++) {
+      tekst[b].classList.toggle("tekstLM");
+    }
+
     const container = document.querySelector(".container");
     container.classList.toggle("containerLM");
 
@@ -26,7 +34,7 @@ const changeHandler = function(){
 }
 
 button.addEventListener("click-disabled", changeHandler);
-//timer
+// setInterval
 setInterval(function(){
   
     const currentDate = new Date();
@@ -40,10 +48,127 @@ setInterval(function(){
     else if(lightModeOn === true){
         console.log(currentDate.getHours());
     }
-
 }, 1000);
 
-//TicTacToe
+// Eventlistener voor themeswitcher button
+const knopje = document.querySelector(".knopje")
+knopje.addEventListener("click", changeHandler);
+
+// Players script
+// Variabelen
+const playerNameInputField = document.querySelector('.input-field-player-name');
+const addPlayerButton = document.querySelector('.add-player-button');
+const resetGameButton = document.querySelector('.reset-game-button');
+
+// Elements of player one
+const playerOneLabel = document.querySelector('.player-one-label');
+const addPointsPlayerOneButton = document.querySelector('.add-points-player1-button');
+
+// Elements of player two
+const playerTwoLabel = document.querySelector('.player-two-label');
+const addPointsPlayerTwoButton = document.querySelector('.add-points-player2-button');
+
+// Array of players
+let players = []; 
+
+// Starting version of the game
+resetGame(); 
+
+// Event listeners
+if (addPlayerButton) {
+  addPlayerButton.addEventListener("click", addPlayer);
+}
+
+if (resetGameButton) {
+resetGameButton.addEventListener("click", resetGame);
+}
+
+if (addPointsPlayerOneButton) {
+addPointsPlayerOneButton.addEventListener("click", addPointsPlayerOne);
+}
+
+if (addPointsPlayerTwoButton) {
+addPointsPlayerTwoButton.addEventListener("click", addPointsPlayerTwo);
+}
+
+// Functions
+function addPlayer() {
+  if (players.length >= 2) {
+      alert("There are 2 players (or more) already. Press Reset button to start a new game.");       
+      return;
+  }
+
+  const playerName = playerNameInputField.value;
+  let symbol = "X";
+  if (players.length == 1) {
+      symbol = "O";
+  }
+  const newPlayer = new Player(playerName, symbol); 
+  
+  players.push(newPlayer);
+
+  printPlayers();
+}
+
+function printPlayers() {
+  playerNameInputField.value = "";
+
+  console.log("Print your players here");
+
+  if (players.length == 0) {
+      console.log("No one to play");
+      playerOneLabel.innerHTML = "Enter player one..";
+      playerTwoLabel.innerHTML = "Enter player two..";
+      return;
+  }
+
+  playerOneLabel.value
+
+  for(let i = 0; i < players.length; i++) {
+      let playersText = "";
+      let player = players[i];
+
+      playersText += "Name: " + player.name + "<br>";
+      playersText += "Symbol: " + player.symbol + "<br>";
+      playersText += "Points: " + player.points + "<br>";
+
+      console.log("Player is: " + JSON.stringify(players[i]) + JSON.stringify(playerOneLabel.points));
+
+      if (i == 0) {
+          playerOneLabel.innerHTML = playersText;
+
+          addPointsPlayerOneButton.parentElement.style.visibility = "visible";// Shows add points button
+      } else if (i == 1) {            
+          playerTwoLabel.innerHTML = playersText;
+
+          addPointsPlayerTwoButton.parentElement.style.visibility = "visible";// Shows add points button
+      } else {
+          return;
+      }
+  }
+}
+
+function resetGame() {
+  console.log("Resetting the game");
+  players = [];
+  printPlayers();
+}
+
+function addPointsPlayerOne() {
+  console.log("Adding a point to score of player 1");
+  players[0].addPoints();
+
+  printPlayers();
+}
+
+function addPointsPlayerTwo() {
+  console.log("Adding a point to score of player 2");
+  players[1].addPoints();
+
+  printPlayers();
+}
+
+// TicTacToe
 const X_CLASS = 'x'
 const CIRCLE_CLASS = 'circle'
 const WINNING_COMBINATIONS = [
