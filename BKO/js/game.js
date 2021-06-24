@@ -223,6 +223,21 @@ function endGame(draw) {
     winningMessageTextElement.innerText = 'Draw!'
   } else {
     winningMessageTextElement.innerText = `${circleTurn ? "O's" : "X's"} Wins!`
+
+    let symbol = "X";
+
+    if (circleTurn) {
+      symbol = "O";
+    }
+
+    for(let i = 0; i < players.length; i++) {
+      if (symbol === players[i].symbol) {
+        players[i].addPoints();
+        console.log(`Player ${symbol} won and has ${players[i].points} points`);
+        printPlayers();
+      }
+    }
+
   }
   winningMessageElement.classList.add('show')
 }
