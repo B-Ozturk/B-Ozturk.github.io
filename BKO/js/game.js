@@ -83,14 +83,6 @@ if (resetGameButton) {
 resetGameButton.addEventListener("click", resetGame);
 }
 
-if (addPointsPlayerOneButton) {
-addPointsPlayerOneButton.addEventListener("click", addPointsPlayerOne);
-}
-
-if (addPointsPlayerTwoButton) {
-addPointsPlayerTwoButton.addEventListener("click", addPointsPlayerTwo);
-}
-
 // Functions
 function addPlayer() {
   if (players.length >= 2) {
