@@ -1,0 +1,85 @@
+.topbar{
+    background-color: rgb(11, 52, 90);
+}
+
+.scoreBoard{
+  color: #66CCFF;
+  font-size: 34px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.players-label{
+  text-align: center;
+  color: #d48c2d;
+}
+
+.container-fluid{
+    /* background-color: #0F2027; */
+    background-color: rgb(11, 52, 90);
+    /* margin-top: 200px;
+    padding-bottom: 200px; */
+}
+.lichaam{
+  background-color: rgb(11, 52, 90);
+}
+
+.titel{
+  color: #22c4d6;
+  font-family: monospace;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.wit{
+    color: #ffff;
+}
+
+.start{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.LevelName{
+  font-weight: bold;
+}
+
+.L1Q1{
+  margin-top: 50px;
+}
+
+.knop{
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+.lichaam{
+    background-color: #0F2027;
+}
+
+.uitleg{
+  background-color: #1f404e;
+}
+
+.formCenter{
+  margin: auto;
+  width: 60%;
+  padding: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.anket{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.input-field {
+  font-size:22px;
+  margin-top: 10px;
+  background-color: #2b5b74;
+  border:0px solid #ffffff;
+  border-radius: 4px;
+  color: #ffffff;
+  }

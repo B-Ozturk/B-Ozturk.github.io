@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Triviant | BKO</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="lichaam">
+    <div class="container-fluid topbar">
+        <div class="row">
+            <div class="col-sm-2">
+                <img class="img-fluid rounded" src="foto/BKO_Logo.png" alt="Logo" width="200px" height="200px">
+            </div>
+            <div class="col-sm-10">
+                <h1 class="text-left titel">Triviant | BKO</h1>
+            </div> 
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="col-sm-12">
+        <p class="scoreBoard">
+          SCOREBOARD:
+        </p>
+        <div class="players-label"></div>
+      </div>
+    </div>
+
+    <div class="container-fluid lichaam">
+        <div class="row">
+          <div class="col-sm-12">
+            <form class="formCenter">
+              <div class="form-group">
+                <h1 class="text-center wit">Creëer een account om te spelen</h1>
+                <label class="wit" for="exampleInputEmail1">Student nummer</label>
+                <input type="number" class="form-control studentNumber" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Gebruik je student nummer (te vinden op je schoolpasje)">
+              </div>
+              <div class="form-group">
+                <label class="wit" for="exampleInputPassword1">Gebruikersnaam</label>
+                <input type="name" class="form-control nickName" id="exampleInputPassword1" placeholder="Voer hier je gebruikersnaam in, houd het netjes.">
+              </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <button class="float-left btn btn-warning" type="button" data-toggle="collapse" data-target="#uitleg" aria-expanded="false" aria-controls="uitleg">
+                Uitleg
+              </button>
+            </div>
+            <div class="col-sm-4 d-flex justify-content-center">
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#spel" aria-expanded="false" aria-controls="spel">
+                START
+              </button>
+            </div>
+            <div class="col-sm-4">
+              <button type="button" class="float-right btn btn-primary add-player-button">Sign in</button>
+            </div>
+          </div>
+            </form>
+
+          <div class="collapse" id="uitleg">
+            <div class="container text-center uitleg wit">
+              <div class="row">
+                <div class="col-sm-12">
+                  <p>
+                    Hallo daar speler, ik ga je uitleg geven over het spel. Het spel werkt als volgt: je krijgt allemaal meerkeuze vragen en moet ze allemaal beantwoorden.<br>
+                    Het spel heeft intotaal 3 levels waarmee je 100 punten kan scoren. Nadat je alle vragen hebt beantwoord druk je op de groene knop Controleer en krijg je je score te zien.
+                    Nadat je je antwoorden hebt gecontroleerd druk je op de volgende level en scroll je naar beneden om die level te spelen.
+                    Iedere level is net wat moeilijker dan de vorige en de puntentelling word telkens wat strenger. Aan het eind van de dag word er
+                    gekeken wie het hoogste score heeft behaald. De winnaar krijgt dan als prijs een vrijstelling voor het afspelen van zijn/haar muziek afspeellijst tijdens
+                    de lessen. De winnaar mag dat doen voor 6 lessen naar keuze.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="collapse" id="spel">
+            <div class="container text-center uitleg wit">
+              <div class="row">
+                <div class="col-sm-4 start">
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Level1" aria-expanded="false" aria-controls="l1">
+                    Level 1
+                  </button>
+                </div>
+                <div class="col-sm-4 start d-flex justify-content-center">
+                  <button class="btn btn-dark" type="button" disabled data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="l2">
+                    Level 2
+                  </button>
+                </div>
+                <div class="col-sm-4 start">
+                  <button class="btn btn-dark" type="button" disabled data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="l3">
+                    Level 3
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="collapse" id="Level1">
+            <div class="container text-center uitleg wit">
+              <h1 class="LevelName">Level 1</h1>
+
+              <form class="L1Q1 anket1">
+                <p>Waar staat html voor?</p>
+                <input type="radio" name="vraag1" value="1"> Homeage Text Markup Language<br>
+                <input type="radio" name="vraag1" value="2"> Hyperstyle Text Markup Language<br>
+                <input type="radio" name="vraag1" value="3" id="correct1"> Hyper Text Markup Language<br>
+                <input type="radio" name="vraag1" value="4"> Host Text Markup Language<br>
+              </form>
+              <br>
+              <form class="L1Q2 anket1">
+                <p>Welk woord komt het meest logisch op de plaats van het vraagteken?
+                  Kip staat tot ei als ? staat tot melk</p>
+                <input type="radio" name="vraag2" value="1"> Yoghurt<br>
+                <input type="radio" name="vraag2" value="2"> Kaas<br>
+                <input type="radio" name="vraag2" value="3" id="correct2"> Geit<br>
+                <input type="radio" name="vraag2" value="4"> Melken<br>
+              </form>
+              <br>
+              <form class="L1Q3 anket1">
+                <p>Welke conclusie kun je met absolute zekerheid trekken op basis van de twee gegeven stellingen?</p><br>
+
+                <p>1. Geen enkele kabouter is gedisciplineerd</p><br>
+                <p>2. Alle wielrenners zijn gedisciplineerd</p><br>
+
+                <input type="radio" name="vraag3" value="1"> Sommige wielrenners zijn kabouter<br>
+                <input type="radio" name="vraag3" value="2" id="correct3"> Geen enkele wielrenner is kabouter<br>
+                <input type="radio" name="vraag3" value="3"> Alle kabouters zijn wielrenner<br>
+                <input type="radio" name="vraag3" value="4"> Niet alle wielrenners zijn kabouter<br>
+              </form>
+              <br>
+              <form class="L1Q4 anket1">
+                <p>Welk van de onderstaande woorden heeft als betekenis ‘In het openbaar’?</p>
+                <input type="radio" name="vraag4" value="1" id="correct4"> Publiekelijk<br>
+                <input type="radio" name="vraag4" value="2"> Monument<br>
+                <input type="radio" name="vraag4" value="3"> Expositie<br>
+                <input type="radio" name="vraag4" value="4"> Gemeentelijk<br>
+              </form>
+              <br>
+              <form class="L1Q5 anket1">
+                <p>Hoe wordt een groep wielrenners ook wel genoemd?</p>
+                <input type="radio" name="vraag5" value="1"> Een school<br>
+                <input type="radio" name="vraag5" value="2"> Wielrenners<br>
+                <input type="radio" name="vraag5" value="3" id="correct5"> Een peloton<br>
+                <input type="radio" name="vraag5" value="4"> Een formatie<br>
+              </form>
+              <br>
+              <form class="L1Q6 anket1">
+                <p>Waarmee wordt een hole bij golf gemerkt?</p>
+                <input type="radio" name="vraag6" value="1"> Pole<br>
+                <input type="radio" name="vraag6" value="2"> Gat<br>
+                <input type="radio" name="vraag6" value="3" id="correct6"> Vlaggenstok<br>
+                <input type="radio" name="vraag6" value="4"> Mast<br>
+              </form>
+              <br>
+              <form class="L1Q7 anket1">
+                <p>Hoe wordt de grote oorlog ook wel genoemd?</p>
+                <input type="radio" name="vraag7" value="1" id="correct7"> De eerste wereldoorlog<br>
+                <input type="radio" name="vraag7" value="2"> De tweede wereldoorlog<br>
+                <input type="radio" name="vraag7" value="3"> De 80-jarige oorlog<br>
+                <input type="radio" name="vraag7" value="4"> The Koreanwar<br>
+              </form>
+              <br>
+              <form class="L1Q8 anket1">
+                <p>In welke maand begint de herfst?</p>
+                <input type="radio" name="vraag8" value="1"> Augustus<br>
+                <input type="radio" name="vraag8" value="2"id="correct8"> September<br>
+                <input type="radio" name="vraag8" value="1"> Oktober<br>
+                <input type="radio" name="vraag8" value="1"> November<br>
+              </form>
+              <br>
+              <form class="L1Q9 anket1">
+                <p>Hoeveel spanning komt er uit het stopcontact?</p>
+                <input type="radio" name="vraag9" value="1"> 10-30 volt<br>
+                <input type="radio" name="vraag9" value="2"> 50-130 volt<br>
+                <input type="radio" name="vraag9" value="3"> 140-200 volt<br>
+                <input type="radio" name="vraag9" value="4" id="correct9"> 220-230 volt<br>
+              </form>
+              <br>
+              <form class="L1Q10 anket1">
+                <p>Wat is de meest bekende website voor het microbloggen?</p>
+                <input type="radio" name="vraag10" value="1"> Blog.com<br>
+                <input type="radio" name="vraag10" value="2"> Pinterest<br>
+                <input type="radio" name="vraag10" value="3"> Instagram<br>
+                <input type="radio" name="vraag10" value="4" id="correct10"> Twitter<br>
+                
+              </form>
+              <button class="btn btn-success knop checkButton">Controleer</button>
+
+              <h3>Score: <span class="scoreBord"> </span> <i class="fa fa-star"></i></h3>
+              
+
+              <div class="row">
+                <div class="col-sm-4 start">
+                  <button class="btn btn-dark" type="button" disabled data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="l1">
+                    Level 1
+                  </button>
+                </div>
+                <div class="col-sm-4 start d-flex justify-content-center">
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Level2" aria-expanded="false" aria-controls="l2">
+                    Level 2
+                  </button>
+                </div>
+                <div class="col-sm-4 start">
+                  <button class="btn btn-dark" type="button" disabled data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="l3">
+                    Level 3
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="collapse" id="Level2">
+            <div class="container text-center uitleg wit">
+              <h1 class="LevelName">Level 2</h1>
+
+              <form class="L2Q1 anket2">
+                <p>In november vond de eerste passagierstest plaats met de Hyperloop vacuümtrein. Welk bedrijf voerde de test uit?</p>
+                <input type="radio" name="vraag1" value="1" id="correct11"> Virgin<br>
+                <input type="radio" name="vraag1" value="2"> Shinkansen<br>
+                <input type="radio" name="vraag1" value="3"> TGV<br>
+                <input type="radio" name="vraag1" value="4"> NS<br>
+              </form>
+              <br>
+              <br>
+              <form class="L2Q2 anket2">
+                <p>Een leeg object kun je op verschillende manieren instantiëren (creëren). Welke van de onderstaande manieren is juist?</p><br>
+
+                <p>1. const playerOne = new Object();</p><br>
+                <p>2. const playerTwo = ();</p><br>
+
+                <input type="radio" name="vraag2" value="1"> Manier 1 is juist en manier 2 is onjuist.<br>
+                <input type="radio" name="vraag2" value="2"> Manier 1 is onjuist en manier 2 is juist.<br>
+                <input type="radio" name="vraag2" value="3"> Beide manieren zijn juist.<br>
+                <input type="radio" name="vraag2" value="4" id="correct12"> Beide manieren zijn onjuist.<br>
+              </form>
+              <br>
+              <form class="L2Q3 anket2">
+                <p>Welk van onderstaande stellingen is juist of onjuist.</p><br>
+
+                <p>Stelling 1: een object is een blauwdruk voor het maken van een class.</p><br>
+                <p>Stelling 2: objects kunnen instanties van een class zijn.</p><br>
+
+                <input type="radio" name="vraag3" value="1"> Stelling 1 is juist en stelling 2 is onjuist.<br>
+                <input type="radio" name="vraag3" value="2"> Stelling 1 is onjuist en stelling 2 is juist.<br>
+                <input type="radio" name="vraag3" value="3"> Beide stellingen zijn juist.<br>
+                <input type="radio" name="vraag3" value="4" id="correct13"> Beide stellingen zijn onjuist.<br>
+              </form>
+              <br>
+              <form class="L2Q4 anket2">
+                <p>Wat geeft een gloeilamp het meest af?</p>
+                <input type="radio" name="vraag4" value="1"> Energie<br>
+                <input type="radio" name="vraag4" value="2"> Licht<br>
+                <input type="radio" name="vraag4" value="3" id="correct14"> Warmte<br>
+                <input type="radio" name="vraag4" value="4"> Weerstand<br>
+              </form>
+              <br>
+              <form class="L2Q5 anket2">
+                <p>Aan hoeveel pixels is 1 megapixel gelijk?</p>
+                <input type="radio" name="vraag5" value="1" id="correct15"> 1000000<br>
+                <input type="radio" name="vraag5" value="2"> 1000<br>
+                <input type="radio" name="vraag5" value="3"> 100000<br>
+                <input type="radio" name="vraag5" value="4"> 1000000000<br>
+              </form>
+              <br>
+              <form class="L2Q6 anket2">
+                <p>Uit welk Noord-Brabants dorp kwamen de hangjongeren uit New Kids?</p>
+                <input type="radio" name="vraag6" value="1"> Urk<br>
+                <input type="radio" name="vraag6" value="2"> Dokkum<br>
+                <input type="radio" name="vraag6" value="3" id="correct16"> Maaskantje<br>
+                <input type="radio" name="vraag6" value="4"> Dordrecht<br>
+              </form>
+              <br>
+              <form class="L2Q7 anket2">
+                <p>Wanneer eindigde de eerste wereldoorlog?</p>
+                <input type="radio" name="vraag7" value="1" id="correct17"> 1918<br>
+                <input type="radio" name="vraag7" value="2"> 1930<br>
+                <input type="radio" name="vraag7" value="3"> 1945<br>
+                <input type="radio" name="vraag7" value="4"> 2021<br>
+              </form>
+              <br>
+              <form class="L2Q8 anket2">
+                <p>Hoe wordt een inwoner van Maastricht genoemd?</p>
+                <input type="radio" name="vraag8" value="1"> Een Maastrichter<br>
+                <input type="radio" name="vraag8" value="2" id="correct18"> Een Maastrichtenaar<br>
+                <input type="radio" name="vraag8" value="3"> Een Maaskanter<br>
+                <input type="radio" name="vraag8" value="4"> Een Maas<br>
+              </form>
+              <br>
+              <form class="L2Q9 anket2">
+                <p>Welke stad kent de ‘Lange Poten’ en ‘Het plein’?</p>
+                <input type="radio" name="vraag9" value="1"> Utrecht<br>
+                <input type="radio" name="vraag9" value="2"> Amsterdam<br>
+                <input type="radio" name="vraag9" value="3"> Rotterdam<br>
+                <input type="radio" name="vraag9" value="4" id="correct19"> Den Haag<br>
+              </form>
+              <br>
+              <form class="L2Q10 anket2">
+                <p>Naar welk land exporteert Nederland de meeste goederen?</p>
+                <input type="radio" name="vraag10" value="1" id="correct20"> Duitsland<br>
+                <input type="radio" name="vraag10" value="2"> China<br>
+                <input type="radio" name="vraag10" value="3"> Amerika<br>
+                <input type="radio" name="vraag10" value="4"> België<br>                
+              </form>
+              <button class="btn btn-success knop checkButtonTwo">Controleer</button>
+
+              <h3>Score: <span class="scoreBordTwo"> </span> <i class="fa fa-star"></i></h3>
+
+              <div class="row">
+                <div class="col-sm-4 start">
+                  <button class="btn btn-dark" type="button" disabled data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="l1">
+                    Level 1
+                  </button>
+                </div>
+                <div class="col-sm-4 start d-flex justify-content-center">
+                  <button class="btn btn-dark" type="button" disabled data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="l2">
+                    Level 2
+                  </button>
+                </div>
+                <div class="col-sm-4 start">
+                  <button class="btn btn-primary" type="button"  data-toggle="collapse" data-target="#Level3" aria-expanded="false" aria-controls="l3">
+                    Level 3
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="collapse" id="Level3">
+            <div class="container text-center uitleg wit">
+              
+              <h1 class="LevelName">Level 3</h1>
+
+              <form class="L3Q1 anket3">
+                <p>Wat is het hardste materiaal van het menselijk lichaam?</p>
+
+                <input type="radio" name="vraag1" value="1" id="correct21"> Tandglazuur<br>
+                <input type="radio" name="vraag1" value="2"> Beenmerg<br>
+                <input type="radio" name="vraag1" value="3"> Kaakspieren<br>
+                <input type="radio" name="vraag1" value="4"> Schedel<br>
+              </form>
+              <br>
+              <br>
+              <form class="L3Q2 anket3">
+                <p>Waar ben je bang voor wanneer je last hebt van brontofobie?</p>
+            
+                <input type="radio" name="vraag2" value="1"> Gras<br>
+                <input type="radio" name="vraag2" value="2"> Bijen<br>
+                <input type="radio" name="vraag2" value="3"> Beren<br>
+                <input type="radio" name="vraag2" value="4" id="correct22"> Onweer<br>
+              </form>
+              <br>
+              <form class="L3Q3 anket3">
+                <p>Waar werkt een kompel?</p>
+            
+                <input type="radio" name="vraag3" value="1"> Op zee<br>
+                <input type="radio" name="vraag3" value="2"> Op het platteland<br>
+                <input type="radio" name="vraag3" value="3"> In een fabriek<br>
+                <input type="radio" name="vraag3" value="4" id="correct23"> In de mijnen<br>
+              </form>
+              <br>
+              <form class="L3Q4 anket3">
+                <p>Waar staat het grootste reuzenrad ter wereld?</p>
+                <input type="radio" name="vraag4" value="1"> Frankrijk<br>
+                <input type="radio" name="vraag4" value="2"> Amerika<br>
+                <input type="radio" name="vraag4" value="3" id="correct24"> Singapore<br>
+                <input type="radio" name="vraag4" value="4"> Engeland<br>
+              </form>
+              <br>
+              <form class="L3Q5 anket3">
+                <p>Op welk snoepgoed stond de allereerste streepjescode ooit?</p>
+                <input type="radio" name="vraag5" value="1" id="correct25"> Kauwgom<br>
+                <input type="radio" name="vraag5" value="2"> Chocolade<br>
+                <input type="radio" name="vraag5" value="3"> Gummi beertjes<br>
+                <input type="radio" name="vraag5" value="4"> Lolly<br>
+              </form>
+              <br>
+              <form class="L3Q6 anket3">
+                <p>Welk stofje komt vrij in je hersenen als je chocolade eet?</p>
+                <input type="radio" name="vraag6" value="1"> Dopamine<br>
+                <input type="radio" name="vraag6" value="2"> Serotonine<br>
+                <input type="radio" name="vraag6" value="3" id="correct26"> Endorfine<br>
+                <input type="radio" name="vraag6" value="4"> Adrenaline<br>
+              </form>
+              <br>
+              <form class="L3Q7 anket3">
+                <p>In welk jaar viel Napoleon Rusland tevergeefs binnen?</p>
+                <input type="radio" name="vraag7" value="1"> 1810<br>
+                <input type="radio" name="vraag7" value="2"> 1790<br>
+                <input type="radio" name="vraag7" value="3" id="correct27"> 1812<br>
+                <input type="radio" name="vraag7" value="4"> 1900<br>
+              </form>
+              <br>
+              <form class="L3Q8 anket3">
+                <p>In welk land vind je de grootste skilift ter wereld?</p>
+                <input type="radio" name="vraag8" value="1"> Turkije<br>
+                <input type="radio" name="vraag8" value="2" id="correct28"> Bolivia<br>
+                <input type="radio" name="vraag8" value="3"> Oostenrijk<br>
+                <input type="radio" name="vraag8" value="4"> Zuid-Korea<br>
+              </form>
+              <br>
+              <form class="L3Q9 anket3">
+                <p>In welk jaar werd 's werelds eerste stoomlocotief gebouwd</p>
+                <input type="radio" name="vraag9" value="1"> 1807<br>
+                <input type="radio" name="vraag9" value="2"> 1806<br>
+                <input type="radio" name="vraag9" value="3"> 1805<br>
+                <input type="radio" name="vraag9" value="4" id="correct29"> 1804<br>
+              </form>
+              <br>
+              <form class="L3Q10 anket3">
+                <p>In welk jaar is Apple Inc. opgericht</p>
+                <input type="radio" name="vraag10" value="1" id="correct30"> 1976<br>
+                <input type="radio" name="vraag10" value="2"> 1977<br>
+                <input type="radio" name="vraag10" value="3"> 1999<br>
+                <input type="radio" name="vraag10" value="4"> 2000<br>                
+              </form>
+
+              <button class="btn btn-success knop checkButtonThree">Controleer</button>
+            
+              <h3>Score: <span class="scoreBordThree"> </span> <i class="fa fa-star"></i></h3>
+
+              <button class="btn btn-danger knop afrondenButton">Afronden</button>
+
+            </div>
+          </div>
+
+          </div>
+        </div>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+</html>
