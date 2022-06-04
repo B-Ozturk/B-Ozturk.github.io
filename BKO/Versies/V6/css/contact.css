@@ -1,0 +1,74 @@
+/*alle classes/ID's met LM achter is de light mode versie*/
+.nav-link:hover{
+    color: red;
+}
+
+.nav{
+	margin-top: 50px;
+}
+.navbar{
+	background-color: #2e323a;
+}
+.navLM{
+    background-color: #ffffff;
+}
+.subpagina{
+    color: #ffffff;
+}
+.subpaginaLM{
+    color: #000000;
+}
+
+.jumbotron{
+    background-image: url("../foto/Polestar2.1.jpg");
+    background-size: cover;   
+    background-position: center;
+    height: 488px;
+}
+.jumbotronLM{
+    background-image: url("../foto/Polestar3.2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 488px;
+}
+
+body
+{
+	background-color: #37474F #2e4053;
+	font-family: sans-serif;
+}
+.lichaam{
+	background-color: #0F2027;
+	font-family: sans-serif;
+}
+.lichaamLM{
+    background-color: #e2e2e2;
+    font-family: sans-serif;
+}
+
+hr { 
+    border: none; 
+    background: #66CCFF; 
+    margin-top: 50px;
+    margin-bottom: 50px; 
+} 
+
+.kopie a{
+    color: #66CCFF;
+}
+.kopie{
+    color: #66CCFF;
+    text-align: center;
+}
+
+.kaart{
+    background-color: #aeb4b6;
+}
+
+.tabeltekst{
+    color: #ffffff;
+}
+
+.tabeltekstLM{
+    color: #000000;
+}

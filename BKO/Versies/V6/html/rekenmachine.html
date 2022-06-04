@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">	
+	<head>
+	<title>Rekenmachine</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/rekenmachine.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+	
+    <body class="lichaam">
+		<nav class="navbar navbar-expand-md">
+            <a href="../index.html" class="navbar-brand">
+                <img class="img-fluid rounded" src="../foto/Schermafbeelding 2021-02-21 172502.png" alt="Polestar2" width="150px" height="auto">
+            </a>
+            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#iceNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="iceNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link subpagina" href="../index.html"><i class="fa fa-home"> Home</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link subpagina" href="../html/omz.html"><i class="fa fa-user-circle"> Over mijzelf</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link subpagina" href="vaardigheden.html"><i class="fa fa-check-circle"> Vaardigheden</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link subpagina" href="projecten.html"><i class="fa fa-tasks"> Projecten</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link subpagina" href="contact.html"><i class="fa fa-phone"> Contact</i></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link subpagina" href="rekenmachine.html"><i class="fa fa-calculator"> Rekenmachine</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link subpagina" href="game.html"><i class="fa fa-gamepad"> Spelletjes</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button"><i class="knopje fa fa-adjust"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+	  
+		<div class="jumbotron jumbotron-fluid">
+            <div class="container"></div>
+        </div>
+
+        <div class="alert alert-dark alert-dismissible fade show text-center" role="alert">
+            IOS look a like calculator
+        </div>
+
+            <div class="calculator-grid">
+            <div class="output">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+            </div>
+            <button data-all-clear class="span-two">AC</button>
+            <button data-delete>DEL</button>
+            <button data-operation class="operator">÷</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operation class="operator">x</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operation class="operator">+</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>       
+            <button data-operation class="operator">-</button>            
+            <button data-number class="span-two">0</button>
+            <button data-number>.</button>
+            <button data-equals class="operator">=</button>
+        </div>
+
+        <div class="container">
+			<div class="row">
+                <div class="col-md-12">
+                    <hr />
+                    <p class="kopie">  2021 Copyright: <a href="https://www.instagram.com/ozturk_bk/" target="_blank" rel="noopener noreferrer">Berke Öztürk&reg;</a></p>
+                </div>
+            </div>
+        </div>
+
+	<script src="../js/rekenmachine.js"></script>
+	</body>
+</html>

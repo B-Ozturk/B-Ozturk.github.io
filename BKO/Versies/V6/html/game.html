@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <title>Spelletjes</title>
+  <link rel="stylesheet" type="text/css" href="../css/game.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="lichaam">
+  <nav class="navbar navbar-expand-md">
+    <a href="../index.html" class="navbar-brand">
+      <img class="img-fluid rounded" src="../foto/Schermafbeelding 2021-02-21 172502.png" alt="Polestar2" width="150px"
+        height="auto">
+    </a>
+    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#iceNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="iceNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link subpagina" href="../index.html"><i class="fa fa-home"> Home</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link subpagina" href="omz.html"><i class="fa fa-user-circle"> Over mijzelf</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link subpagina" href="vaardigheden.html"><i class="fa fa-check-circle"> Vaardigheden</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link subpagina" href="projecten.html"><i class="fa fa-tasks"> Projecten</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link subpagina" href="contact.html"><i class="fa fa-phone"> Contact</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link subpagina" href="rekenmachine.html"><i class="fa fa-calculator"> Rekenmachine</i></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link subpagina" href="game.html"><i class="fa fa-gamepad"> Spelletjes</i></a>
+        </li>
+        <li class="nav-item">
+          <button type="button"><i class="knopje fa fa-adjust"></i></button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+    </div>
+  </div>
+
+  <div class="alert alert-dark alert-dismissible fade show text-center">
+    Wil je meer spelletjes spelen bezoek dan mijn andere website door hier op te drukken
+    <a href="https://sites.google.com/view/play2gether/homepage" target="_blank" rel="noopener noreferrer" class="btn btn-primary center">Play2gether</a>
+  </div>
+
+  <div class="players-container">
+    <div class="game-container">
+      <div class="row">
+        <div class="column add-players">
+          <div class="row tekst">
+            Create a new player:
+            <br>
+            <input name="player-name" type="text" class="input-field input-field-player-name" placeholder="name">
+          </div>
+          <button type="button" class="button add-player-button">Speler toevoegen</button>
+          <div class="row">
+            <p>
+              <button type="button" class="button reset-game-button">Reset game</button>
+            </p>
+          </div>
+        </div>
+        <row>
+          <div class="column">
+            <div class="player-info-container">
+              <div class="tekst player-one-label">
+                Speler 1
+              </div>
+              <div>
+                <a href="https://www.youtube.com/watch?v=AICOHDK4kAI&t=18s" target="_blank" rel="noopener noreferrer"><button type="button" class="add-points-button add-points-player1-button">X</button></a> 
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="player-info-container">
+              <div class="tekst player-two-label">
+                Speler 2
+              </div>
+              <div>
+                <a href="https://youtu.be/AICOHDK4kAI?t=167" target="_blank" rel="noopener noreferrer"><button type="button" class="add-points-button add-points-player2-button">O</button></a>
+              </div>
+            </div>
+          </div>
+        </row>
+      </div>
+    </div>
+
+      <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
+      <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button id="restartButton">Restart</button>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <hr />
+            <p class="kopie"> 2021 Copyright: <a href="https://www.instagram.com/ozturk_bk/" target="_blank" rel="noopener noreferrer">Berke Öztürk&reg;</a></p>
+          </div>
+        </div>
+      </div>
+</body>
+<script type="module" src="../js/game.js"></script>
+
+</html>

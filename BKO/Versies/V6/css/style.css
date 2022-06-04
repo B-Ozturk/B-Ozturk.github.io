@@ -1,0 +1,195 @@
+/*alle classes/ID's met LM achter is de light mode versie*/
+.nav-link:hover{
+    color: red;
+}
+
+h2{
+	color: snow;
+}
+p{
+	color: snow;
+}
+
+.nav{
+	margin-top: 50px;
+}
+.navbar{
+	background-color: #2e323a;
+}
+.navLM{
+    background-color: #ffffff;
+}
+.subpagina{
+    color: #ffffff;
+}
+.subpaginaLM{
+    color: #000000;
+}
+
+.jumbotron{
+    background-image: url("../foto/Polestar2.1.jpg");
+    background-size: cover;   
+    background-position: center;
+    height: 488px;
+}
+.jumbotronLM{
+    background-image: url("../foto/Polestar3.2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 488px;
+}
+
+body{
+	background-color: #37474F;
+	font-family: sans-serif;	  
+}
+
+.lichaam{
+	background-color: #0F2027;
+    font-family: sans-serif;
+}
+.lichaamLM{
+    background-color: #e2e2e2;
+    font-family: sans-serif;
+}
+
+.titel{
+	text-align: center;
+	color: #919191;
+}
+
+.intro{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+.introLM{
+    color: #000000;
+}
+
+.kontainer{
+	background-color:  #44464a;
+	width: 700px;
+	margin-top: -30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+.kontainerLM{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+h1
+{
+	margin: 0;
+}
+
+h2{
+	text-align: center;
+}
+
+hr { 
+    border: none; 
+    background: #66CCFF; 
+    margin-top: 50px;
+    margin-bottom: 50px; 
+} 
+
+.kopie a{
+    color: #66CCFF;
+}
+.kopie{
+    color: #66CCFF;
+    text-align: center;
+}
+
+
+/* Timeline holder */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+ /* Timeline vertical line */
+ul.timeline:before {
+    content: ' ';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
+}
+
+li.timeline-item {
+    margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 2rem;
+}
+
+.pijl{
+    border-right: 0.5rem solid #343a40;
+}
+
+.pijlLM{
+    border-right: 0.5rem solid #ffffff;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+    content: ' ';
+    background: rgb(129, 129, 129);
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid rgb(196, 196, 196);
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background: #37474f;
+    background: -webkit-linear-gradient(to right, #37474f, #37474f);
+    background: linear-gradient(to 37474f, #37474f, #37474f);
+    min-height: 100vh;
+}
+
+.text-gray {
+    color: rgb(0, 0, 0);
+}
+
+/*blok van timeline*/
+.blok{
+    background-color: #343a40;
+}
+.blokLM{
+    background-color: #ffffff;
+}
+
+/*tekst in blok*/
+.tblok{
+    color: #d1d1d1;
+}
+.tblokLM{
+    color: #000000;
+}
