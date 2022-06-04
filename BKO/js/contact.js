@@ -21,12 +21,6 @@ const changeHandler = function(){
 
     const container = document.querySelector(".container");
     container.classList.toggle("containerLM");
-    
-    let ttxt, b;
-    ttxt = document.querySelectorAll(".tabeltekst");
-    for (b = 0; b < ttxt.length; b++) {
-    ttxt[b].classList.toggle("tabeltekstLM");
-    }
 
     const footer = document.querySelector(".kopie");
     footer.classList.toggle("kopieLM");    
