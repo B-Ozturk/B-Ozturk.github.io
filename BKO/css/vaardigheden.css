@@ -63,6 +63,10 @@ h5{
 }
 
 /* css van de tabel */
+.lastrow{
+    margin-bottom: 75px;
+}
+
 .sterk{
     color:#09ff00;
 }
