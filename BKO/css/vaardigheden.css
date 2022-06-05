@@ -63,33 +63,32 @@ h5{
 }
 
 /* css van de tabel */
-
 .sterk{
     color:#09ff00;
 }
 .sterkLM{
-    color:#0ad403;
+    color:#079203;
 }
 
 .msterk{
     color:#ff5e00;
 }
 .msterkLM{
-    color:#e25300;
+    color:#b44200;
 }
 
 .vaardigheden{
     color:#00c3ff;
 }
 .vaardighedenLM{
-    color:#00abdf;
+    color:#0085ad;
 }
 
 .mkennis{
-    color:#8c00ff;
+    color:#00ffc8;
 }
 .mkennisLM{
-    color:#6f00ca;
+    color:#009776;
 }
 
 .sterkT{
@@ -120,11 +119,11 @@ h5{
 }
 
 .mkennisT{
-    color:#8c00ff;
+    color:#00ffc8;
     font-size: large;
 }
 .mkennisTLM{
-    color:#6f00ca;
+    color:#00e6b4;
     font-size: large;
 }
 

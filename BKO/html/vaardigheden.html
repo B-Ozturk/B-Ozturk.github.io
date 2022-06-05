@@ -49,9 +49,10 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                   <h5 class="subpagina">Programmeertalen die ik beheers:</h5>
-                   <div class="progress">
+                <div class="col-md-12">
+                    <h5 class="subpagina text-center">Vaardigheden die ik beheers:</h5>
+
+                    <div class="progress">
                         <div class="progress-bar bg-danger progressie1 progress-bar-striped progress-bar-animated" style="width:100%">HTML</div> 
                     </div>
                    
@@ -62,9 +63,9 @@
                     <div class="progress">
                         <div class="progress-bar bg-warning progressie3 progress-bar-striped progress-bar-animated" style="width:100%">JavaScript</div> 
                     </div>
-                   
+
                     <div class="progress">
-                        <div class="progress-bar bg-success progressie4 progress-bar-striped progress-bar-animated" style="width:85%">C#</div> 
+                        <div class="progress-bar bg-success progressie4 progress-bar-striped progress-bar-animated" style="width:80%">C#</div> 
                     </div>
                    
                     <div class="progress">
@@ -72,59 +73,53 @@
                     </div>
                                        
                     <div class="progress">
-                        <div class="progress-bar bg-primary progressie5 progress-bar-striped progress-bar-animated" style="width:80%">Symfony</div> 
+                        <div class="progress-bar bg-primary progressie5 progress-bar-striped progress-bar-animated" style="width:85%">Symfony</div> 
+                    </div>
+                                       
+                    <div class="progress">
+                        <div class="progress-bar bg-secondary progressie5 progress-bar-striped progress-bar-animated" style="width:100%">Scrum</div> 
                     </div>
                 </div>
-               
-                <div class="col-md-9">
-                    <table class="table table-dark table-hover">
-                        <thead>
-                            <tr>
-                            <th class="sterk">Sterke eigenschap</th>
-                            <th class="msterk">Eigenschap waar ik aan moet werken</th>
-                            <th class="vaardigheden">Vaardigheden</th>
-                            <th class="mkennis">Kennis</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="sterk">Ik ben creatief</td>
-                                <td class="msterk">Ik stel te hoge eisen aan mezelf</td>
-                                <td class="vaardigheden">Ik kan snel oplossingen vinden/maken</td>
-                                <td class="mkennis">Mensenkennis</td>
-                            </tr>
-                            <tr>
-                                <td class="sterk">Ik ben leergierig</td>
-                                <td class="msterk" class="msterk">Ik ben een beetje perfectionist en hardwerkend en verlang dat in een projectteam dat ook ongeveer.</td>
-                                <td class="vaardigheden">Ik heb overtuigingskracht</td>
-                                <td class="mkennis">Historische kennis</td>
-                            </tr>
-                            <tr>
-                                <td class="sterk">Ik ben vindingrijk</td>
-                                <td class="msterk"></td>
-                                <td class="vaardigheden">Ik ben duidelijk</td>
-                                <td class="mkennis">Zelfkennis</td>
-                            </tr>
-                            <tr>
-                                <td class="sterk">Ik ben rustig</td>
-                                <td class="msterk"></td>
-                                <td class="vaardigheden">Ik kan coachen</td>
-                                <td class="mkennis">Technische kennis</td>
-                            </tr>
-                            <tr>
-                                <td class="sterk">Ik ben sociaal</td>
-                                <td class="msterk"></td>
-                                <td class="vaardigheden">Ik heb visie</td>
-                                <td class="mkennis"></td>
-                            </tr>
-                            <tr>
-                                <td class="sterk">Ik heb een oog voor detail</td>
-                                <td class="msterk"></td>
-                                <td class="vaardigheden">Ik heb aanpassingsvermogen</td>
-                                <td class="mkennis"></td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-sterk-list" data-toggle="list" href="#list-sterk" role="tab" aria-controls="sterk">Sterke eigenschap</a>
+                    <a class="list-group-item list-group-item-action" id="list-msterk-list" data-toggle="list" href="#list-msterk" role="tab" aria-controls="msterk">Eigenschappen waar ik aan moet werken</a>
+                    <a class="list-group-item list-group-item-action" id="list-vaardigheden-list" data-toggle="list" href="#list-vaardigheden" role="tab" aria-controls="vaardigheden">Vaardigheden</a>
+                    <a class="list-group-item list-group-item-action" id="list-mkennis-list" data-toggle="list" href="#list-mkennis" role="tab" aria-controls="mkennis">Kennis</a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-sterk" role="tabpanel" aria-labelledby="list-sterk-list">
+                            <ul class="sterk">- Ik ben creatief</ul>
+                            <ul class="sterk">- Ik ben leergierig</ul>
+                            <ul class="sterk">- Ik ben vindingrijk</ul>
+                            <ul class="sterk">- Ik ben rustig</ul>
+                            <ul class="sterk">- Ik ben sociaal</ul>
+                            <ul class="sterk">- Ik heb een oog voor detail</ul>
+                        </div>
+                        <div class="tab-pane fade" id="list-msterk" role="tabpanel" aria-labelledby="list-msterk-list">
+                            <ul class="msterk">- Ik stel te hoge eisen aan mezelf</ul>
+                            <ul class="msterk">- Ik ben een beetje perfectionist en hardwerkend en verlang dat in een projectteam dat ook ongeveer.</ul>
+                        </div>
+                        <div class="tab-pane fade" id="list-vaardigheden" role="tabpanel" aria-labelledby="list-vaardigheden-list">
+                            <ul class="vaardigheden">- Ik kan snel oplossingen vinden/maken</ul>
+                            <ul class="vaardigheden">- Ik heb overtuigingskracht</ul>
+                            <ul class="vaardigheden">- Ik ben duidelijk</ul>
+                            <ul class="vaardigheden">- Ik kan coachen</ul>
+                            <ul class="vaardigheden">- Ik heb visie</ul>
+                            <ul class="vaardigheden">- Ik heb aanpassingsvermogen</ul>
+                        </div>
+                        <div class="tab-pane fade" id="list-mkennis" role="tabpanel" aria-labelledby="list-mkennis-list">
+                            <ul class="mkennis">- Mensenkennis</ul>
+                            <ul class="mkennis">- Historische kennis</ul>
+                            <ul class="mkennis">- Zelfkennis</ul>
+                            <ul class="mkennis">- Technische kennis</ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

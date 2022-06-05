@@ -43,7 +43,7 @@ const changeHandler = function(){
     for (e = 0; e < msterk.length; e++) {
         msterk[e].classList.toggle("msterkLM");
     }
-
+    
     let vaardighedenT, f;
     vaardighedenT = document.querySelectorAll(".vaardighedenT");
     for (f = 0; f < vaardighedenT.length; f++) {
